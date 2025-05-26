@@ -75,8 +75,8 @@ namespace Practico.Datos
             }
         }
         /// <summary>
-        /// Método para devolver la lista de TipoDePagoes ordenada por nombre
-        /// de país
+        /// Método para devolver la lista de FormaDePagoes ordenada por nombre
+        /// 
         /// </summary>
         /// <returns></returns>
         public List<FormaDePago> GetLista()
@@ -265,44 +265,7 @@ namespace Practico.Datos
             }
         }
 
-        public List<FormaDePago> Filtrar(string textoParaFiltrar)
-        {
-            if (_usarCache)
-            {
-                return FormasDePago
-                    .Where(p => p.Descripcion
-                        .StartsWith(textoParaFiltrar)).ToList();
-            }
-            var listaFiltrada = new List<FormaDePago>();
-
-            try
-            {
-                using (var cnn = new SqlConnection(_connectionString))
-                {
-                    cnn.Open();
-                    var query = @"select * from FormasDePago WHERE Descripcion LIKE @texto";
-                    using (var cmd = new SqlCommand(query, cnn))
-                    {
-                        textoParaFiltrar += "%";
-                        cmd.Parameters.AddWithValue("@texto", textoParaFiltrar);
-                        using (var reader = cmd.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                var FormaDePago = ConstruirFormaDePago(reader);
-                                listaFiltrada.Add(FormaDePago);
-                            }
-                        }
-                    }
-                }
-                return listaFiltrada;
-
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception("Error al intentar filtrar formas de pago", ex);
-            }
+      
         }
     }
-}
+
