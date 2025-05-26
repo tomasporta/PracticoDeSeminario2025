@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practico.Datos", "Practico.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practico.Windows", "Practico.Windows\Practico.Windows.csproj", "{CC894E7E-9FB3-4494-8D53-AE0A55EDF8F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practico.Servicios", "Practico.Servicios\Practico.Servicios.csproj", "{18AE9F17-D893-4FA3-9C58-6F2A9668B644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practico.Utilidades", "Practico.Utilidades\Practico.Utilidades.csproj", "{B1DB8CD0-51A5-4337-8D66-01FE2C0C8F8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{CC894E7E-9FB3-4494-8D53-AE0A55EDF8F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC894E7E-9FB3-4494-8D53-AE0A55EDF8F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC894E7E-9FB3-4494-8D53-AE0A55EDF8F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18AE9F17-D893-4FA3-9C58-6F2A9668B644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AE9F17-D893-4FA3-9C58-6F2A9668B644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AE9F17-D893-4FA3-9C58-6F2A9668B644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AE9F17-D893-4FA3-9C58-6F2A9668B644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1DB8CD0-51A5-4337-8D66-01FE2C0C8F8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DB8CD0-51A5-4337-8D66-01FE2C0C8F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DB8CD0-51A5-4337-8D66-01FE2C0C8F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DB8CD0-51A5-4337-8D66-01FE2C0C8F8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
