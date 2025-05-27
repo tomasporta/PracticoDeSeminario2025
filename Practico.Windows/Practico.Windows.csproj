@@ -8,4 +8,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Practico.Entidades\Practico.Entidades.csproj" />
+    <ProjectReference Include="..\Practico.Servicios\Practico.Servicios.csproj" />
+  </ItemGroup>
+
 </Project>
